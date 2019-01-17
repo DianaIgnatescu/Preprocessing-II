@@ -179,6 +179,21 @@ img {
     padding: 0;
   }
 }
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.navigation .pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
 .navigation .navbar {
   display: flex;
   justify-content: space-between;
@@ -298,6 +313,11 @@ img {
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination img {
+    padding-right: 1%;
+  }
 }
 @media (max-width: 500px) {
   .home .content-destination p {

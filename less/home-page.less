@@ -75,7 +75,9 @@
 
     img {
       border-radius: 10px;
+      
       @media @mobile {
+        padding-right: 1%
       }
     }
     p {
@@ -104,6 +106,7 @@
       @media @mobile {
         width: 100%;
       }
+     
       .btn {
         #styling-mixins.button-cta(10px; @eastern-blue; 1.8rem; @white; center);
         padding: 10px 0;
@@ -111,7 +114,7 @@
         align-self: right;
         @media @mobile {
           width: 100%;
-        }
+        }     
       }
     }
   }
