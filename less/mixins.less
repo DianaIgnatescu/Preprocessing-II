@@ -1,1 +1,22 @@
 // Mixins in here
+#flex-mixins {
+  .flex-row(@just-cont: space-around; @al-it: center) {
+  display: flex;
+  justify-content: @just-cont;
+  align-items: @al-it;
+  }
+}
+
+#styling-mixins {
+  .dashed-border() {
+    border-bottom: 2px dashed @navigation-border;
+  }
+
+  .button-cta(@radius; @background; @font-size; @color; @align) {
+    border-radius: @radius;
+    background-color: @background;
+    font-size: @font-size;
+    color: @white;
+    text-align: @align;
+  }
+}
